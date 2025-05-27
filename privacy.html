@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SurgeMsg</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .privacy-section {
+            margin-bottom: 30px;
+        }
+        .opt-in-form {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy for SurgeMsg Integration</h1>
+
+    <div class="privacy-section">
+        <h2>1. Information Collection</h2>
+        <p>As a SurgeMsg client, we use their services to process the following information:</p>
+        <ul>
+            <li>Customer names and email addresses</li>
+            <li>Message delivery information</li>
+            <li>Communication metrics and analytics</li>
+        </ul>
+    </div>
+
+    <div class="privacy-section">
+        <h2>2. Use of Information</h2>
+        <p>Through SurgeMsg services, we use this information to:</p>
+        <ul>
+            <li>Send important communications to our customers</li>
+            <li>Track message delivery and engagement</li>
+            <li>Improve our customer communication experience</li>
+        </ul>
+    </div>
+
+    <div class="privacy-section">
+        <h2>3. Data Protection</h2>
+        <p>We utilize SurgeMsg's secure infrastructure to protect your data. All information is processed in accordance with SurgeMsg's security standards and data protection protocols.</p>
+        <p>For more information about SurgeMsg's security measures, you can visit their website at surgemsg.com</p>
+    </div>
+
+    <div class="opt-in-form">
+        <h2>Sign up for our Communications</h2>
+        <p>Subscribe to receive important updates through our SurgeMsg-powered messaging system.</p>
+        <form id="optInForm">
+            <div>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I have read and agree to the privacy policy</label>
+            </div>
+            <br>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('optInForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for subscribing!');
+            // Here you can add the logic to send the form data
+        });
+    </script>
+</body>
+</html>
